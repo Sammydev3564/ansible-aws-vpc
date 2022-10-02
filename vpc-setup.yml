@@ -5,7 +5,7 @@
    - name: import VPC Variables
      include_vars: vars/vpc_setup
  
-   - name: Create vprofile VPC
+   - name: create vprofile VPC
      ec2_vpc_net:
        name: "{{vpc_name}}"
        cidr_block: "{{vpccidr}}"
@@ -29,7 +29,7 @@
        map_public: yes
        resources_tags:
          Name: vprofile_pubsub1
-     register: pubsub1 out
+     register: pubsub1_out
       
         
        
