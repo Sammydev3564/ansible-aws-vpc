@@ -8,13 +8,13 @@
     
    - name: Create vprofile-vpc
      ec2_vpc_net:
-       name: '{{vpc_name:}}'
-       cidr_block: '{{vpccidr:}}'
-       region: '{{region:}}'
+       name: "{{vpc_name}}"
+       cidr_block: "{{vpccidr}}"
+       region: "{{region}}"
        dns_support: yes
        dns_hostnames: yes
        tenancy: default
-       state: '{{state}}'
+       state: "{{state}}"
      register: vpcout
 
    - debug:
