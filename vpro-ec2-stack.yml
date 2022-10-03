@@ -209,6 +209,7 @@
         mode: '0400'
 
     - name: Insert/Update Inventory file provision-stack/inventory-vpro
+
       blockinfile:
         path: provision-stack/inventory-vpro
         block: |
