@@ -22,7 +22,6 @@ zone3: us-east-1c
 state: present
 
 # bastion-host var
-
 bastion_ami: ami-026b57f3c383c2eec
 MYIP: 197.210.78.22/32
 
